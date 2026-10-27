@@ -227,3 +227,183 @@ p{
 .blog-list p{
     transform: translateX(-px);
 }
+
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .menu {
+        margin-left: 0;
+        padding: 20px 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu li a {
+        font-size: 14px;
+    }
+
+    /* Banner */
+    .banner-container {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        transform: none;
+    }
+
+    .banner-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-container h3 {
+        font-size: 28px;
+    }
+
+    .banner-container p {
+        font-size: 14px;
+        transform: none;
+    }
+
+    .social-link img {
+        width: 35px;
+    }
+
+    /* Experience */
+    .experience-list {
+        width: 90%;
+        transform: none;
+    }
+
+    .experience-list h3 {
+        font-size: 26px;
+        transform: none;
+    }
+
+    .experience-list h4 {
+        font-size: 18px;
+        transform: none;
+    }
+
+    .experience-list h5 {
+        font-size: 16px;
+        transform: none;
+    }
+
+    .experience-list ul {
+        font-size: 14px;
+        padding-left: 25px;
+    }
+
+    .experience-list ul li {
+        transform: none;
+    }
+
+    .experience-list p {
+        transform: none;
+    }
+
+    /* Projects */
+    .Project {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .Project h3 {
+        font-size: 26px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .project-info h3,
+    .project-info h4 {
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    .project-info p {
+        transform: none;
+    }
+
+    .project-btn {
+        flex-wrap: wrap;
+    }
+
+    /* Education */
+    .education-list {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .testimonials-card {
+        width: 100%;
+    }
+
+    .testimonials-card p {
+        transform: none;
+    }
+
+    /* Blogs */
+    .blog-list {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .blog-list p {
+        transform: none;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .banner-container h3 {
+        font-size: 24px;
+    }
+
+    .banner-img img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .project-image img {
+        height: 160px;
+    }
+}
