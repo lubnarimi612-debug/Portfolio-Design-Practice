@@ -230,97 +230,514 @@ p{
 
 
 
-/* Responsive Design */
 
+/* ===== Common CSS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+/* ===== Navbar ===== */
+.navber {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu li a:hover {
+    color: blueviolet;
+}
+
+/* ===== Banner ===== */
+.banner {
+    width: 100%;
+    padding: 40px 0 60px;
+}
+
+.banner-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.banner-img {
+    flex-shrink: 0;
+}
+
+.banner-img img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.banner-contant {
+    flex: 1;
+    min-width: 0;
+}
+
+.banner-contant h3 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.banner-contant p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.social-link img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* ===== Experience ===== */
+#Experience {
+    padding: 35px 0;
+}
+
+.experience-list {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.experience-list h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.experience-list h4 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0 5px;
+}
+
+.dot {
+    font-size: 24px;
+    margin-right: 6px;
+}
+
+.experience-list p {
+    font-size: 13px;
+    color: #777;
+    margin: 4px 0 10px;
+}
+
+.experience-list h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 12px 0 5px;
+}
+
+.experience-list ul {
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.experience-list ul li {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* ===== Projects ===== */
+.Project {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.Project > h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #e5e5e5;
+}
+
+.project-image {
+    width: 42%;
+    flex-shrink: 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-info h4 {
+    font-size: 23px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tags span {
+    font-size: 12px;
+    padding: 4px 9px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    color: #555;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+
+.project-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-btn a {
+    text-decoration: none;
+}
+
+.project-btn button {
+    padding: 9px 13px;
+    background: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.project-btn button:hover {
+    background: #6520ad;
+}
+
+/* ===== Education ===== */
+#Education {
+    padding: 35px 0;
+}
+
+.education-list {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.education-list h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.education-list h4 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 18px 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.education-list h4 p {
+    font-size: 13px;
+    color: #777;
+    margin-left: 25px;
+}
+
+.education-list > p {
+    font-size: 14px;
+    color: #777;
+    margin: 8px 0 20px 25px;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Testimonials ===== */
+.testimonials {
+    width: 90%;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.testimonials > h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.testimonials-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.testimonials-card {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px #e7e1e1;
+}
+
+.testimonials-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Blogs ===== */
+#Blogs {
+    padding: 35px 0;
+}
+
+.blog-list {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.blog-list h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.blog-list h4 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.blog-list h4 p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    margin-top: 4px;
+}
+
+.blog-list > p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+/* ===== Tablet Responsive ===== */
 @media screen and (max-width: 768px) {
 
-    /* Navbar */
     .menu {
-        margin-left: 0;
-        padding: 20px 10px;
-        gap: 15px;
+        justify-content: center;
+        gap: 18px;
         flex-wrap: wrap;
+        padding: 15px 10px;
     }
 
     .menu li a {
         font-size: 14px;
     }
 
-    /* Banner */
     .banner-container {
         width: 90%;
-        flex-direction: column;
-        text-align: center;
         gap: 25px;
-        transform: none;
     }
 
     .banner-img img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
-    .banner-container h3 {
-        font-size: 28px;
+    .banner-contant h3 {
+        font-size: 27px;
     }
 
-    .banner-container p {
+    .banner-contant p {
         font-size: 14px;
-        transform: none;
     }
 
-    .social-link img {
-        width: 35px;
+    .experience-list h3,
+    .Project > h3,
+    .education-list h3,
+    .testimonials > h3,
+    .blog-list h3 {
+        font-size: 26px;
+    }
+
+    .project-card {
+        gap: 18px;
+        padding: 15px;
+    }
+
+    .project-image {
+        width: 40%;
+    }
+
+    .project-image img {
+        height: 160px;
+    }
+
+    .project-info h4 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+    }
+
+    .project-btn {
+        gap: 8px;
+    }
+
+    .project-btn button {
+        padding: 8px 10px;
+    }
+
+    .testimonials-card {
+        padding: 15px;
+    }
+}
+
+ /* Responsive */
+@media screen and (max-width: 600px) {
+
+    .menu {
+        gap: 12px;
+        padding: 15px 8px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    /* Banner */
+    .banner {
+        padding: 25px 0 40px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner-img img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .banner-contant {
+        width: 100%;
+    }
+
+    .banner-contant h3 {
+        font-size: 25px;
+    }
+
+    .banner-contant p {
+        font-size: 14px;
+    }
+
+    .social-link {
+        justify-content: center;
     }
 
     /* Experience */
-    .experience-list {
-        width: 90%;
-        transform: none;
-    }
-
-    .experience-list h3 {
-        font-size: 26px;
-        transform: none;
+    #Experience {
+        padding: 25px 0;
     }
 
     .experience-list h4 {
-        font-size: 18px;
-        transform: none;
+        font-size: 16px;
     }
 
     .experience-list h5 {
-        font-size: 16px;
-        transform: none;
+        font-size: 14px;
     }
 
     .experience-list ul {
-        font-size: 14px;
-        padding-left: 25px;
+        font-size: 13px;
+        padding-left: 22px;
     }
 
-    .experience-list ul li {
-        transform: none;
-    }
-
-    .experience-list p {
-        transform: none;
-    }
-
-    /* Projects */
+    /* Project cards */
     .Project {
-        width: 90%;
-        padding: 30px 0;
-    }
-
-    .Project h3 {
-        font-size: 26px;
+        padding: 25px 0;
     }
 
     .project-card {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
+        padding: 12px;
     }
 
     .project-image {
@@ -329,36 +746,42 @@ p{
 
     .project-image img {
         width: 100%;
-        height: 200px;
+        height: auto;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
     }
 
-    .project-info h3,
+    .project-info {
+        width: 100%;
+    }
+
     .project-info h4 {
         font-size: 20px;
-        white-space: normal;
     }
 
     .project-info p {
-        transform: none;
+        font-size: 13px;
     }
 
     .project-btn {
-        flex-wrap: wrap;
+        gap: 8px;
     }
 
     /* Education */
-    .education-list {
-        width: 90%;
-        padding: 30px 0;
+    .education-list h4 {
+        font-size: 15px;
+    }
+
+    .education-list > p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .education-list h4 p {
+        margin-left: 10px;
     }
 
     /* Testimonials */
-    .testimonials {
-        width: 90%;
-        padding: 30px 0;
-    }
-
     .testimonials-container {
         flex-direction: column;
         gap: 15px;
@@ -366,44 +789,48 @@ p{
 
     .testimonials-card {
         width: 100%;
+        padding: 16px;
     }
 
     .testimonials-card p {
-        transform: none;
+        font-size: 13px;
     }
 
     /* Blogs */
-    .blog-list {
-        width: 90%;
-        padding: 30px 0;
+    .blog-list h4 {
+        font-size: 17px;
     }
 
-    .blog-list p {
-        transform: none;
+    .blog-list > p {
+        font-size: 13px;
     }
 }
 
-/* Very small screens */
-@media screen and (max-width: 480px) {
+/* ===== Extra Small Mobile ===== */
+@media screen and (max-width: 360px) {
 
     .menu {
-        gap: 10px;
+        gap: 9px;
     }
 
     .menu li a {
+        font-size: 11px;
+    }
+
+    .banner-contant h3 {
+        font-size: 22px;
+    }
+
+    .experience-list h4 {
+        font-size: 15px;
+    }
+
+    .project-info h4 {
+        font-size: 18px;
+    }
+
+    .project-btn button {
         font-size: 12px;
-    }
-
-    .banner-container h3 {
-        font-size: 24px;
-    }
-
-    .banner-img img {
-        width: 160px;
-        height: 160px;
-    }
-
-    .project-image img {
-        height: 160px;
+        padding: 8px;
     }
 }
